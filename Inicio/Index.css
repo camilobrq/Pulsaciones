@@ -1,0 +1,72 @@
+html{
+
+    background:cadetblue;
+  
+  }
+  .Text{
+   text-align: center;
+   font-size: 20px;
+   color: black;
+  }
+  header{
+    background-color:black;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+  .ImagenPrincipal{
+      border-radius: 10px;
+      margin-top: 3%;
+      top: -15px;
+      margin-left: 35%;
+    width: 1200px;
+  }
+  article{
+    color: white;
+  }
+  nav {
+    
+    background:  gray;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin:auto;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+
+  }
+  nav ul a {
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    color: white;
+  }
+  nav ul li {
+    padding: 20px;
+    display: inline-block ;
+    text-align: center;
+  }
+  
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: black;
+    padding: 25px;
+    width:100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+  }

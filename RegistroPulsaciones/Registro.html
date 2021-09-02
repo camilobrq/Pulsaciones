@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicas para Niños</title>
+    <link rel="stylesheet" href="Registro.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Conoce tus pulsaciones</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="Registro.html">
+                <li> Registro</li>
+            </a>
+            <a href="Operaciones.html">
+                <li> Consultar</li>
+            </a>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <form>
+               
+                <label>Identificacion</label>
+                <input id="Identificacion" type="number" />
+                <label> Nombre</label>
+                <input id="Nombre" type="string" />
+                <select name=" Sexo" id="SexoSelccionada">
+                    <option>Seleccione</option>
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                 
+                </select>
+                <label> Edad</label>
+                <input id="Edad" type="number" />
+                <label> resultado</label>
+                <input id="resultado" type="number" />
+                <button type="button" onclick="operacion()">Calcular</button>
+            </form>
+
+        </article>
+    </section>
+    
+    <footer>
+        <p>By: Camilo Brito</p>
+    </footer>
+    <script>
+        function operacion() {
+            var op = document.getElementById("SexoSelccionada").value;          
+            var Edad = document.getElementById("Edad").value;
+           
+            var resultado;
+            
+            if (op === "Femenino") {
+                resultado = pulsacionFemenina(Edad);
+            }
+              if (op === "Masculino") {
+                resultado = pulsacionMasculina(Edad);
+            }
+            if (op==="Seleccione") {
+                 alert('Debe Seleccionar una operacion');
+            }
+
+            document.getElementById("resultado").value = resultado;
+            
+        }
+
+        function pulsacionFemenina(Edad) {
+         
+            var resultado =(220- parseInt(Edad))/10;
+            alert(resultado)
+            return resultado;
+        }
+           function pulsacionMasculina(Edad) {
+         
+            var resultado = (210- parseInt(Edad))/10;
+            alert(resultado)
+            return resultado;
+        }
+          
+
+    </script>
+</body>
+
+</html>
