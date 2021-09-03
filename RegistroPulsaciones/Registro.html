@@ -16,13 +16,13 @@
     </header>
     <nav>
         <ul>
-            <a href="C:\Users\windows 10\Desktop\Pulsaciones\Pulsaciones\Inicio\Index.html">
+            <a href="../Inicio/Index.html">
                 <li>Inicio</li>
             </a>
             <a href="Registro.html">
                 <li> Registro</li>
             </a>
-            <a href="C:\Users\windows 10\Desktop\Pulsaciones\Pulsaciones\Consulta\Consulta.html">
+            <a href="../Consulta/Consulta.html">
                 <li> Consultar</li>
             </a>
         </ul>
@@ -54,42 +54,11 @@
     <footer>
         <p>By: Camilo Brito</p>
     </footer>
-    <script>
-        function operacion() {
-            var op = document.getElementById("SexoSelccionada").value;          
-            var Edad = document.getElementById("Edad").value;
-           
-            var resultado;
-            
-            if (op === "Femenino") {
-                resultado = pulsacionFemenina(Edad);
-            }
-              if (op === "Masculino") {
-                resultado = pulsacionMasculina(Edad);
-            }
-            if (op==="Seleccione") {
-                 alert('Debe Seleccionar una operacion');
-            }
 
-            document.getElementById("resultado").value = resultado;
-            
-        }
 
-        function pulsacionFemenina(Edad) {
-         
-            var resultado =(220- parseInt(Edad))/10;
-            alert(resultado)
-            return resultado;
-        }
-           function pulsacionMasculina(Edad) {
-         
-            var resultado = (210- parseInt(Edad))/10;
-            alert(resultado)
-            return resultado;
-        }
-          
-
-    </script>
+  <script src="Registro.js">
+      
+  </script>
 </body>
 
 </html>

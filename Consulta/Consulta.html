@@ -13,10 +13,10 @@
     </header>
     <nav>
         <ul>
-            <a href="C:\Users\windows 10\Desktop\Pulsaciones\Pulsaciones\Inicio\Index.html">
+            <a href="../Inicio/Index.html">
                 <li>Inicio</li>
             </a>
-            <a href="C:\Users\windows 10\Desktop\Pulsaciones\Pulsaciones\RegistroPulsaciones\Registro.html">
+            <a href="../RegistroPulsaciones/Registro.html">
                 <li> Registro</li>
             </a>
             <a href="Consulta.html">
@@ -27,9 +27,9 @@
 <div id="main-container">
 
 
-    <table class="default">
+    <table class="table">
 
-        <tr>
+        <thead>
       
           <th>Identificacion</th>
       
@@ -41,50 +41,28 @@
 
           <th>Pulsaciones</th>
       
-        </tr>
+        </thead>
       
-        <tr>
+      <tbody id="tablaContenedor">
+
+
+      </tbody>
       
-          <td></td>
-      
-          <td></td>
-      
-          <td></td>
-          <td></td>
-      
-          <td></td>
-      
-        </tr>
-      
-        <tr>
-      
-          <td></td>
-      
-          <td></td>
-      
-          <td></td>
-          <td></td>
-      
-          <td></td>
-      
-        </tr>
-      
-        <tr>
-      
-          <td></td>
-      
-          <td></td>
-      
-          <td></td>
-          <td></td>
-      
-          <td></td>
-      
-        </tr>
-      
-      </table>
+    </table>
+
+    <br/>
+    
+      <form>
+        <button id="Consultar" onclick="main()">
+            Consultar
+        </button>
+      </form>
+
 </div>
 
+ 
     <footer>By Camilo Brito</footer>
+
+    <script src="Consulta.js"></script>
 </body>
 </html>
